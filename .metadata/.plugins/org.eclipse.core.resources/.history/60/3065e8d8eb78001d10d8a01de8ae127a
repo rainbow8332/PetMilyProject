@@ -1,0 +1,115 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/app.css">
+  <title>PetMily</title>
+</head>
+
+<jsp:include page="header.jsp"></jsp:include>
+
+<body>
+<form action="write" enctype="multipart/form-data" method="post">
+	<div class="container">
+		<div class="row text-center">
+			<h3 style="margin: 100px 50px 10px 0px">
+				<strong>게시물 작성</strong>
+			</h3>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="row justify-content-center ">
+				<div class="col-4 mb-3 gy-4">
+					<label for="exampleFormControlInput1" class="form-label">작성자
+					</label> <input type="text" class="form-control" name="writer"
+						id="exampleFormControlInput1" placeholder="닉네임을 입력해 주세요">
+				</div>
+				<div class="col-2"></div>
+			</div>
+		</div>
+		
+		<div class="row justify-content-center">
+			<div class="row justify-content-center ">
+				<div class="col-4 mb-3 gy-4">
+					<label for="exampleFormControlInput1" class="form-label">제목
+					</label> <input type="text" class="form-control" name="title"
+						id="exampleFormControlInput1" placeholder="제목을 입력해 주세요">
+				</div>
+				<div class="col-2"></div>
+			</div>
+		</div>
+
+
+		<div class="row justify-content-center">
+			<div class="col-6 mb-3 gy-2">
+				<label for="exampleFormControlInput1" class="form-label">내용</label>
+				<textarea class="form-control" id="exampleFormControlTextarea1" name="content"
+					rows="10"></textarea>
+			</div>
+		</div>
+
+		<!-- 주소 -->
+		<div class="row justify-content-center ">
+			<div class="col-4 mb-3 gy-2">
+				<label for="exampleFormControlInput1" class="form-label">주소
+				</label> <input type="text" class="form-control" name="plocation_basic"
+					id="plocation_basic" placeholder="주소를 입력해 주세요" readonly>
+			</div>
+			<!-- 주소 검색 버튼 -->
+			<button class="btn btn-warning col-1 gy-2 align-self-center"
+				type="button" id="address_search" onclick="sample4_execDaumPostcode()"
+				style="margin-top: 1.5rem; padding-top: 0.7rem; padding-bottom: 0.7rem;">검색</button>
+			<div class="col-1 gy-2"></div>
+		</div>
+
+		<!-- 상세주소 입력 -->
+		<div class="row justify-content-center ">
+			<div class="col-6 mb-3">
+				<input type="text" class="form-control" name="plocation_detail"
+					id="exampleFormControlInput1" placeholder="상세 주소를 입력해 주세요">
+			</div>
+		</div>
+
+		<!-- 폴더에서 사진 추가 -->
+		<div class="row justify-content-center">
+			<div class="col-6 mb-3 gy-3">
+				<label for="exampleFormControlInput1" class="form-label">사진
+					업로드 </label>
+					<input type="file" class="form-control my-2" id="file1" name="file1"
+						aria-describedby="inputGroupFileAddon04" aria-label="Upload" accept="image/*">
+						<input type="file" class="form-control my-2" id="file2" name="file2"
+						aria-describedby="inputGroupFileAddon04" aria-label="Upload" accept="image/*">
+						<input type="file" class="form-control my-2" id="file3" name="file3"
+						aria-describedby="inputGroupFileAddon04" aria-label="Upload" accept="image/*">
+					
+			</div>
+
+		</div>
+
+		<!-- 등록 버튼 -->
+		<div class="row justify-content-center my-5 text-center">
+			<div class="col-4">
+				<input class="btn btn-warning w-100" type="submit" value="등록" >
+			</div>
+		</div>
+	</div>
+</form>
+</body>
+</html>

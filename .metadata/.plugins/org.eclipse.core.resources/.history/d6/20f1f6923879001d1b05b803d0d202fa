@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&family=Roboto:wght@100;300;400;500;700&display=swap");
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+button,
+input,
+textarea,
+select,
+span,
+small {
+  font-family: "Roboto", sans-serif;
+}
+
+.section-content {
+  padding: 4rem 0;
+}
+
+.shadow-box {
+  transition: 0.5s ease-in;
+}
+.shadow-box:hover {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+#header #navTop .socials a img {
+  border-radius: 0.75rem;
+}
+#header #navPrimary {
+  background-color: #0e2d16;
+}
+#header #navPrimary .offcanvas {
+  width: 300px !important;
+}
+#header #navPrimary .offcanvas .mobile-menu a {
+  font-size: 1.1rem !important;
+}
+#header #navPrimary .offcanvas .mobile-menu a.active {
+  font-weight: bold !important;
+  color: #0e2d16;
+}
+#header #navPrimary .offcanvas .mobile-menu li {
+  padding-left: 0.75rem;
+  line-height: 1.75;
+}
+
+/* Carousel */
+#frontCarousel {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 1rem;
+}
+#frontCarousel .carousel-inner {
+  border-radius: 1rem;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+#frontCarousel .carousel-inner .carousel-item {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+#frontCarousel .carousel-inner .carousel-item .carousel-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+ /* Front programs section */
+#frontPrograms {
+  background-color: #e4e0de;
+}
+#frontPrograms .program-item {
+  border-radius: 1rem;
+}
+#frontPrograms .program-item a {
+  color: #0e2d16;
+}
+#frontPrograms .program-item img {
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 130px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+#frontPrograms .program-item p {
+  font-size: 1.1rem;
+}/*# sourceMappingURL=app.css.map */

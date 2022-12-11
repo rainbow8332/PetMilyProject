@@ -517,3 +517,10 @@
 2022-12-11 15:08:56,848 [Worker-26: Launching PetMily - PetmilyPrototypeApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-12-11 15:08:56,848 [Worker-26: Launching PetMily - PetmilyPrototypeApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-12-11 15:08:56,848 [Worker-26: Launching PetMily - PetmilyPrototypeApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\gukhwa\Documents\PetMilyProject\PetMily\PetMily\src\test\resources
+2022-12-11 18:45:43,824 [Worker-60: Launching PetMily - PetmilyPrototypeApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-11 18:45:43,824 [Worker-60: Launching PetMily - PetmilyPrototypeApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-11 18:45:43,831 [Worker-60: Launching PetMily - PetmilyPrototypeApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-12-11 18:45:43,897 [Worker-60: Launching PetMily - PetmilyPrototypeApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 52 resources
+2022-12-11 18:45:43,920 [Worker-60: Launching PetMily - PetmilyPrototypeApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-11 18:45:43,921 [Worker-60: Launching PetMily - PetmilyPrototypeApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-12-11 18:45:43,921 [Worker-60: Launching PetMily - PetmilyPrototypeApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\gukhwa\Documents\PetMilyProject\PetMily\PetMily\src\test\resources

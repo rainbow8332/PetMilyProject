@@ -1,0 +1,312 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="assets/css/app.css">
+  <title>PetMily</title>
+</head>
+
+<body>
+  
+<jsp:include page="header.jsp"></jsp:include>
+
+  <!-- Carousel[S] -->
+  <section id="frontCarousel" class="container-xxl carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#frontCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#frontCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#frontCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div align="center">
+	    <div class="carousel-inner">
+	      <div class="carousel-item active" data-bs-interval="2500" style="background-image: url('/assets/images/pets.jpg'); ">
+	        <div class="carousel-overlay text-white d-flex justify-content-center align-items-center">
+	          <div class="carousel-text text-center px-md-5">
+	            <h1 class="carousel-title display-4">펫밀리</h1>
+	            <h3 class="carousel-subtitle">반려견과 사람이 함께하는 아름다운 동행</h3>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="carousel-item" data-bs-interval="2500" style="background-image: url('/assets/images/puppy.jpg'); ">
+	        <div class="carousel-overlay text-white d-flex justify-content-center align-items-center">
+	          <div class="carousel-text text-center px-md-5">
+	            <h1 class="carousel-title display-4">우리는 함께</h1>
+	            <h3 class="carousel-subtitle">가족이자 친구인 소중한 마이펫!</h3>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="carousel-item" data-bs-interval="2500" style="background-image: url('/assets/images/smile.jpg'); ">
+	        <div class="carousel-overlay text-white d-flex justify-content-center align-items-center">
+	          <div class="carousel-text text-center px-md-5">
+	            <h1 class="carousel-title display-4">Smile</h1>
+	            <h3 class="carousel-subtitle">그 미소를 지켜주세요</h3>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#frontCarousel" data-bs-slide="prev" style="padding-left: 100px">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#frontCarousel" data-bs-slide="next" style="padding-right: 100px">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+  <!-- Carousel[E] -->
+  
+   <!-- Front programs section[S] -->
+  <section id="frontPrograms">
+      <div class="container-xxl">
+        <div class="row justify-content-center">
+          <div class="col-md-10 text-center">
+           <br>
+           <br>
+            <h1 class="text-center mb-4 fw-bold">펫과사전</h1>
+            <p class="lead">알면알수록 쓸모있는 펫과사전</p>
+            <br>
+              <div class="row justify-content-center px-2">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                  <div class="program-item bg-white border p-2 shadow-box">
+                    <a href="page.html" class="text-decoration-none">
+                      <img src="/assets/images/shihtzu.png" alt="Project 1" class="img-fluid">
+                    </a>
+                    <p class="mb-0">시츄</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                  <div class="program-item bg-white border p-2 shadow-box">
+                    <a href="page.html" class="text-decoration-none">
+                      <img src="/assets/images/poodle.png" alt="Project 2" class="img-fluid">
+                    </a>
+                    <p class="mb-0">푸들</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                  <div class="program-item bg-white border p-2 shadow-box">
+                    <a href="page.html" class="text-decoration-none">
+                      <img src="/assets/images/bichon.jpg" alt="Project 3" class="img-fluid">
+                    </a>
+                    <p class="mb-0">박태권님 강아지</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                  <div class="program-item bg-white border p-2 shadow-box">
+                    <a href="page.html" class="text-decoration-none">
+                      <img src="/assets/images/goldenlessriver.png" alt="Project 4" class="img-fluid">
+                    </a>
+                    <p class="mb-0">골든 리트리버</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Front programs section[E] --
+
+<!-- Front latest section[S] -->
+  <section id="frontLatest">
+      <div class="container-xxl">
+        <h1 class="text-center mb-4 pt-5 fw-bold">댕댕이 작명소</h1>
+        <p class="lead text-center mb-5">너의 이름은?</p>
+
+        <div class="row">
+          <div class="col-md-6 mb-5 latest-posts">
+          <!-- 
+            <div class="latest-posts-header mb-4">
+              <h4>Latest posts</h4>
+            </div>
+          -->
+            <div class="card latest-post">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-4 latest-post-featured" style="background-image: url('/assets/images/siba.jpg');"></div>
+                <div class="col-md-8 latest-post-text">
+                  <div class="card-body">
+                  <!-- 
+                    <h4 class="card-title fw-bold">
+                      <a href="post.html">Sample Post</a>
+                    </h4>
+                   -->  
+                    <p class="card-text fw-bold">
+                    시바견<br>
+                    16개월<br>
+                    똘망똘망 우리집 막내에요<br>
+                    작지만 용맹한 임시 누렁이 이름을 지어주세요^^<br>
+					</p>
+                    <p class="card-text"><small class="text-muted fw-bold">2022-10-21</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card latest-post">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-4 latest-post-featured" style="background-image: url('/assets/images/coca.png');"></div>
+                <div class="col-md-8 latest-post-text">
+                  <div class="card-body">
+                  <!-- 
+                    <h4 class="card-title fw-bold">
+                      <a href="post.html">Test Post</a>
+                    </h4>
+                   -->  
+                    <p class="card-text fw-bold">
+                    갈색 푸들<br>
+                    2세<br>
+                    공놀이를 좋아함<br>
+                    낮시간에 혼자계신 할머니의 말동무<br>
+					</p>
+                    <p class="card-text"><small class="text-muted fw-bold">2022-12-10</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="text-center">
+              <a href="blog.html" class="btn btn-outline-primary">View more posts</a>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5 latest-reviews">
+          <!-- 
+            <div class="latest-reviews-header mb-4">
+              <h4>Latest reviews</h4>
+            </div>
+           --> 
+            <div class="card latest-review">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-4 latest-review-featured" style="background-image: url('/assets/images/sawal.png');"></div>
+                <div class="col-md-8 latest-review-text">
+                  <div class="card-body">
+                  <!-- 
+                    <h4 class="card-title fw-bold">
+                      <a href="review.html">Good review</a>
+                    </h4>
+                   -->  
+					<p class="card-text fw-bold">
+                    스텐다드 푸들<br>
+                    3세<br>
+                    나의 운동메이트! 사람아님 주의<br>
+                    부쩍 커진 사월이 어울리는 이름으로 개명하고 싶어요ㅎ<br>
+					</p>
+                    <p class="card-text"><small class="text-muted fw-bold">2022-12-11</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card latest-review">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-4 latest-review-featured" style="background-image: url('/assets/images/englishshipdog.png');"></div>
+                <div class="col-md-8 latest-review-text">
+                  <div class="card-body">
+                  <!-- 
+                    <h4 class="card-title fw-bold">
+                      <a href="review.html">Wonderful!!</a>
+                    </h4>
+                   -->  
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quidem sed assumenda maiores quibusdam inventore, ullam nam?</p>
+                    <p class="card-text"><small class="text-muted">2022-12-30</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="text-center">
+              <a href="review.html" class="btn btn-outline-primary">View more reviews</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Front latest section[E] -->
+  
+   <!-- Front infos section[S] -->
+ <!-- 
+  <section id="frontInfos">
+    <div class="section-content">
+      <div class="container-xxl">
+        <h3 class="text-center mb-4">Our Infos and How to Contact us</h3>
+        <div class="row w-75 mx-auto socials">
+          <div class="col-6 col-lg-3 mb-4">
+            <div class="card shadow-box">
+              <a href="tel:02-111-1111">
+                <img src="/assets/images/icon-phone.png" alt="Phone" class="card-img">
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <div class="card shadow-box">
+              <a target="_blank" href="#">
+                <img src="/assets/images/icon-kakao-channel.png" alt="Kakao Channel" class="card-img">
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <div class="card shadow-box">
+              <a target="_blank" href="#">
+                <img src="/assets/images/icon-youtube.png" alt="Youtube" class="card-img">
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <div class="card shadow-box">
+              <a target="_blank" href="#">
+                <img src="/assets/images/icon-facebook.png" alt="Facebook" class="card-img">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center infos">
+          <div class="col-md-4 mb-3">
+            <div class="card card-body shadow-sm p-4 text-center box-bg">
+              <i class="fas fa-map-marker-alt fa-4x"></i>
+              <h4 class="mb-0">How to find</h4>
+              <hr class="hr-black">
+              <div class="fw-light">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo architecto similique cupiditate voluptas et fugit recusandae repellendus consequatur, in fuga!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card card-body shadow-sm p-4 text-center box-bg">
+              <i class="fas fa-clock fa-4x"></i>
+              <h4 class="mb-0">Business hour</h4>
+              <hr class="hr-black">
+              <div class="fw-light">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo architecto similique cupiditate voluptas et fugit recusandae repellendus consequatur, in fuga!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Front infos section[E] -->
+  
+   -->
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <!-- Kakao map appkey here -->
+  <script src="/assets/js/app.js"></script>
+
+</body>
+
+</html>
